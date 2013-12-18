@@ -33,7 +33,7 @@ Just start it by going to the /client folder and entering ``` compass watch ```
 
 ### Dummy Content
 
-It includes some dummy content from @IronSummitMedia and their awesome startbootstrap templates.
+It includes some dummy content from [@IronSummitMedia](https://github.com/IronSummitMedia/startbootstrap) and their awesome startbootstrap templates.
 Basic setup for Iron Router is included with a home template.
 
 
