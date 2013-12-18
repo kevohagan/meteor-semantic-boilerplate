@@ -12,7 +12,6 @@ git clone https://github.com/kevohagan/meteor-sass-bootstrap.git
 cd meteor-sass-bootstrap
 
 mrt
-
 ```
 
 open your browser at ``` http://localhost:3000 ``` and you're good to go
