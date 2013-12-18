@@ -19,9 +19,9 @@ open your browser at ``` http://localhost:3000 ``` and you're good to go
 
 ### Features
 
-sass-bootstrap
-font-awesome
-iron-router
+- sass-bootstrap
+- font-awesome
+- iron-router
 
 
 ### Dummy Content
