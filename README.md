@@ -17,6 +17,13 @@ mrt
 open your browser at ``` http://localhost:3000 ``` and you're good to go
 
 
+##### Compass 
+
+The boilerplate includes a basic config.rb file in the /client folder. 
+
+Just start it by going to the /client folder and entering ``` compass watch ``` 
+
+
 ### Features
 
 - sass-bootstrap
