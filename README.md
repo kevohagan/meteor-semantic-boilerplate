@@ -24,6 +24,9 @@ The boilerplate includes a basic config.rb file in the /client folder.
 Just start it by going to the /client folder and entering ``` compass watch ``` 
 
 
+> For more info on how to use bootstrap-sass go to [@glebm](https://github.com/thomas-mcdonald/bootstrap-sass)'s package. That's were all the magic is! :)
+
+
 ### Features
 
 - sass-bootstrap
@@ -33,7 +36,7 @@ Just start it by going to the /client folder and entering ``` compass watch ```
 
 ### Dummy Content
 
-It includes some dummy content from @IronSummitMedia and their awesome startbootstrap templates.
+It includes some dummy content from [@IronSummitMedia](https://github.com/IronSummitMedia/startbootstrap) and their awesome startbootstrap templates.
 Basic setup for Iron Router is included with a home template.
 
 
