@@ -9,3 +9,7 @@ insecure
 preserve-inputs
 font-awesome
 iron-router
+filepicker
+ogno-admin
+accounts-password
+accounts-ui

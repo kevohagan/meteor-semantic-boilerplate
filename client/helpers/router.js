@@ -31,4 +31,7 @@ Router.map(function () {
     path: '/team'
   });
 
+  this.route('test',{
+    path: '/test'
+  });
 });

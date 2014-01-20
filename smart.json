@@ -1,6 +1,9 @@
 {
   "packages": {
     "font-awesome": {},
-    "iron-router": {}
+    "iron-router": {},
+    "ogno-admin": {},
+    "collection2": {},
+    "filepicker": {}
   }
 }

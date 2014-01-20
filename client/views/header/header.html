@@ -1,24 +1,26 @@
 <template name="header">
-      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Start Bootstrap</a>
+<div class="ui tiered menu">
+  <div class="menu">
+    <a class="active item" href="{{pathFor 'home'}}">
+      <i class="users icon"></i>
+      <span>Home</span>
+    </a>
+    <a class="item" href="{{pathFor 'portfolio'}}">
+      <i class="grid layout icon"></i><span>Portfolio</span>
+    </a>
+    <a class="item" href="{{pathFor 'contact'}}">
+      <i class="mail icon"></i><span>Contact</span>
+    </a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search icon"></i>
         </div>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="{{pathFor 'portfolio'}}">Portfolio</a></li>
-            <li><a href="{{pathFor 'team'}}">Team</a></li>
-            <li><a href="{{pathFor 'contact'}}">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
+    </div>
+  </div>
+
+</div>
 </template>
