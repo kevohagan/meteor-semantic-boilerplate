@@ -1,0 +1,80 @@
+<template name='entrySignIn'>
+
+  <div id="entrySignInPage" class="ui page one column">
+      <div class="ui grid">
+        <div class="column wide ten center">
+                {{#if logo}}
+                <img src="{{logo}}" alt="Logo" class="ui large image">
+                {{/if}}
+
+                <div class="ui icon message">
+                  <i class="inbox icon"></i>
+                  <div class="content">
+                    <div class="header">
+                      Have you heard about our mailing list?
+                    </div>
+                    <p>Get all the best inventions in your e-mail every day. Sign up now!</p>
+                  </div>
+                </div>
+
+
+                     <form class="ui form segment dark stripe" id="signIn">
+                            <div class="field">
+                              <label>Email</label>
+                              <input name="email" placeholder="{{emailPlaceholder}}" value='{{email}}' type="{{emailInputType}}">
+                            </div>
+                            <div class="field">
+                              <label>Password</label>
+                              <input name="password" type="password" class="form-control" value='{{password}}' placeholder="Password">
+                            </div>
+                            <div class="inline field">
+                              <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>I agree to the terms and conditions</label>
+                              </div>
+                            </div>
+                            <button type="submit" class="ui blue submit button">Sign in</button>
+                    </form>
+
+        </div>
+      </div>
+  </div>
+
+</template>
+
+
+<template name="old">
+    <div  class="page">
+    <img class="background-fish" src="{{ landingPageBackgroundImage }}">
+    <div class="container">
+      <div class="row">
+        <div class="entry col-md-4 col-md-offset-4">
+          {{#if otherLoginServices}}
+          <div class="entry-social">
+            {{#each loginServices}}
+            {{> entrySocial}}
+            {{/each}}
+            <div class="email-option">
+              <strong class="line-thru or-sign-in">OR</strong>
+            </div>
+          </div>
+          {{/if}}
+
+          {{> entryError}}
+
+          {{#unless otherLoginServices}}
+          <div class="email-option">
+            <h3>Sign In</h3>
+            <hr>
+          </div>
+          {{/unless}}
+
+          <!--<p class="entry-signup-cta">Don't have an account? <a href="/sign-up">Sign up</a></p>-->
+          <hr>
+          <div class="centered"><a href="/forgot-password">Forgot password?</a></div>
+          <!--<a href="/sign-up"><button type="submit" class=" submit btn btn-default">Don't have an account?</button></a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

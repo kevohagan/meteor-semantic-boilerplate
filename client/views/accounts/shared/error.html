@@ -1,0 +1,10 @@
+<template name="entryError">
+  {{#if error}}
+    <hr>
+    {{#if errorColor}}
+      <div class='alert alert-danger'>{{error}}</div>
+    {{else}}
+      <div class='centered clickable unselectable sign-up-btn alert alert-warning'>{{error}}</div>
+    {{/if}}
+  {{/if}}
+</template>

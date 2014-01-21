@@ -10,3 +10,6 @@ Meteor.startup(function () {
             }
         });
 });
+
+
+Meteor.subscribe('fotos');

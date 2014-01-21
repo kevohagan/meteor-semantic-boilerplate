@@ -34,4 +34,19 @@ Router.map(function () {
   this.route('test',{
     path: '/test'
   });
+
+
+  this.route('adminRoute', {
+    path: '/admin',
+    template:'ognoAdminMenu',
+    before: function(){
+      if(!Meteor.userId()){
+        this.render("entrySignIn");
+        this.stop();
+      }
+
+      Session.set('current_page', 'Admin');
+    }
+
+  });
 });

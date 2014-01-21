@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
 preserve-inputs
 font-awesome
@@ -13,3 +12,6 @@ filepicker
 ogno-admin
 accounts-password
 accounts-ui
+simple-schema
+event-hooks
+collection2
