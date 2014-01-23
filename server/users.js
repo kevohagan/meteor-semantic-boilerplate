@@ -13,10 +13,10 @@ Meteor.startup(function () {
       username: 'admin',
       password: 'admin',
       role: 'admin',
-      email: 'ajuliatorne@gmail.com',
+      email: 'admin@admin.com',
       profile: {
         name: 'admin',
-        avatar: '/img/Logo.jpg'
+        avatar: 'logo.svg'
       }
     });
     console.info('Account created: ' + sysadminId);

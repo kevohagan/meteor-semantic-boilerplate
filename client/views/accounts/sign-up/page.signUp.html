@@ -77,53 +77,79 @@
   </div>
 
 
-<div class="dark stripe">
-  <div class="ui page grid">
-    <div class="column">
-      <h2 class="ui huge inverted center aligned icon header">
-        <i class="circular emphasized inverted teal chat outline icon"></i>
-        {{#if logo}}
-        <img src="{{logo}}" alt="Home" class="ui medium image icon">
-        {{/if}}
-        <div class="content">Have a conversation with your components<div class="sub header">Semantic gives you a variety of UI components with real-time debug output, letting your code tell you what its doing.</div>
-        </div>
-      </h2>
-      <div class="ui inverted horizontal section divider">
-        <i class="circular heart icon"></i>
+  <div id="entrySignInPage" class="ui page ">
+      <div class="ui grid one column center aligned ">
+          <div class="column wide six ">
+                {{#if logo}}
+                  <a href="/" class="center aligned">
+                  <img src="{{logo}}" alt="Logo" class="ui small rounded image entry-logo">
+                  </a>
+                {{else}}
+                  <a href="/" class="center aligned">
+                     <i class="huge green circular user icon entry-icon"></i>
+                  </a>
+                {{/if}}
+
+
+                 <form class="ui form segment {{signupClass}}" id="signUp">
+
+                        <h3 class="ui header">Create an Account</h3>
+
+                        {{#if showUsername}}
+                        <div class="field">
+                        <!--<label>Username</label>-->
+                        <input  name="username" type="string" placeholder="Username" value=''>
+                        </div>
+                        {{/if}}
+                        {{#if showEmail}}
+                        <div class="field">
+                          <!-- <label>Email Address</label> -->
+                          <input name="email" placeholder="Email Address" type="email" value=''>
+                        </div>
+                        {{/if}}
+
+                        <div class="field">
+                          <!-- <label>Password</label> -->
+                          <input name="password" type="password" placeholder="Password" value=''>
+                        </div>
+
+
+                        {{#if showSignupCode}}
+                        <div class="field">
+                          <!--<label>Signup Code</label>-->
+                          <input name="signupCode" type="string"  placeholder="Signup Code" value=''>
+                        </div>
+                        {{/if}}
+
+                        <div class="inline field">
+                          <a href="/forgot-password"><h5>Forgot password?</h5></a>
+                        </div>
+
+                        <button type="submit" class="ui green submit button">Sign Up</button>
+                </form>
+
+                {{#if both}}
+                <p class="entry-agreement">By clicking Sign up, you agree to our
+                  <a href="{{privacyUrl}}">Privacy Policy</a> and
+                  <a href="{{termsUrl}}">Terms of Use</a>.
+                </p>
+                {{else}}
+                {{#unless neither}}
+                <p class="entry-agreement">By clicking Sign up, you agree to our
+                  {{#if privacyUrl}}<a href="{{privacyUrl}}">Privacy Policy</a>.{{/if}}
+                  {{#if termsUrl}}<a href="{{termsUrl}}">Terms of Use</a>.{{/if}}
+                </p>
+                {{/unless}}
+                {{/if}}
+
+                <h2 class="ui header">
+                  <i class="settings icon"></i>
+                  Account Settings
+                </h2>
+
+
+          </div>
       </div>
-
-      <div class="ui form segment">
-          <div class="two fields">
-            <div class="field">
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div class="field">
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div class="field">
-            <label>Username</label>
-            <input placeholder="Username" type="text">
-          </div>
-          <div class="field">
-            <label>Password</label>
-            <input type="password">
-          </div>
-          <div class="inline field">
-            <div class="ui checkbox">
-              <input type="checkbox">
-              <label>I agree to the terms and conditions</label>
-            </div>
-          </div>
-          <div class="ui blue submit button">Submit</div>
-        </div>
-
-
-
-    </div>
   </div>
-</div>
 
 </template>

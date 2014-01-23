@@ -36,9 +36,12 @@ Router.map(function () {
   });
 
 
+
+
   this.route('adminRoute', {
     path: '/admin',
-    template:'ognoAdminMenu',
+    layoutTemplate:'ognoAdminLayout',
+    template:'ognoAdminOverview',
     before: function(){
       if(!Meteor.userId()){
         this.render("entrySignIn");
@@ -50,3 +53,9 @@ Router.map(function () {
 
   });
 });
+
+
+BasicController = RouteController.extend({
+
+
+})

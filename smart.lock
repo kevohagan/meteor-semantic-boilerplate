@@ -9,7 +9,7 @@
         "version": "0.6.2"
       },
       "ogno-admin": {
-        "version": "0.2.2"
+        "version": "0.2.3"
       },
       "collection2": {
         "version": "0.3.3"
@@ -31,8 +31,8 @@
       },
       "ogno-admin": {
         "git": "https://github.com/matteodem/meteor-ogno-admin.git",
-        "tag": "v0.2.2",
-        "commit": "84c53b81b6c70caa0fc519ef1ea5ccd04eb40f0c"
+        "tag": "v0.2.3",
+        "commit": "85b46539c08fb804a08b44ed432733f35ccc9e71"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
@@ -46,8 +46,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.4.10",
-        "commit": "6f02c8f8f97ae82b7b4d1e2a529edfa3700b6e9b"
+        "tag": "v0.4.11",
+        "commit": "1f27a29a4cd36303e7bf67ed679f018077f8e190"
       },
       "pagination-mini": {
         "git": "https://github.com/huyinghuan/meteor-pagination-mini.git",
@@ -56,8 +56,8 @@
       },
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
-        "tag": "v0.12.0",
-        "commit": "ea58778393ec4cf509d44a7d8fb906549f46fce7"
+        "tag": "v0.12.1",
+        "commit": "6d895bcec1953a1dd609541288fccc3971520d72"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",

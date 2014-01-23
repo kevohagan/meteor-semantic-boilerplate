@@ -1,0 +1,4 @@
+.meteor/local
+.meteor/meteorite
+*.sublime-project
+*.sublime-workspace

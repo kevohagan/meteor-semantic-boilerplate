@@ -1,0 +1,4 @@
+Template.home.rendered = function () {
+
+
+};

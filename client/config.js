@@ -13,3 +13,4 @@ Meteor.startup(function () {
 
 
 Meteor.subscribe('fotos');
+Meteor.subscribe('cars');

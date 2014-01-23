@@ -1,42 +1,41 @@
 <template name='entrySignIn'>
 
-  <div id="entrySignInPage" class="ui page one column">
-      <div class="ui grid">
-        <div class="column wide ten center">
+  <div id="entrySignInPage" class="ui page ">
+      <div class="ui grid one column center aligned ">
+          <div class="column wide six ">
                 {{#if logo}}
-                <img src="{{logo}}" alt="Logo" class="ui large image">
+                  <a href="/" class="center aligned">
+                  <img src="{{logo}}" alt="Logo" class="ui small rounded image entry-logo">
+                  </a>
+                {{else}}
+                  <a href="/" class="center aligned">
+                     <i class="huge green circular user icon entry-icon"></i>
+                  </a>
                 {{/if}}
 
-                <div class="ui icon message">
-                  <i class="inbox icon"></i>
-                  <div class="content">
-                    <div class="header">
-                      Have you heard about our mailing list?
-                    </div>
-                    <p>Get all the best inventions in your e-mail every day. Sign up now!</p>
-                  </div>
-                </div>
 
+                 <form class="ui form segment" id="signIn">
 
-                     <form class="ui form segment dark stripe" id="signIn">
-                            <div class="field">
-                              <label>Email</label>
-                              <input name="email" placeholder="{{emailPlaceholder}}" value='{{email}}' type="{{emailInputType}}">
-                            </div>
-                            <div class="field">
-                              <label>Password</label>
-                              <input name="password" type="password" class="form-control" value='{{password}}' placeholder="Password">
-                            </div>
-                            <div class="inline field">
-                              <div class="ui checkbox">
-                                <input type="checkbox">
-                                <label>I agree to the terms and conditions</label>
-                              </div>
-                            </div>
-                            <button type="submit" class="ui blue submit button">Sign in</button>
-                    </form>
+                        <h3 class="ui header">Log In</h3>
 
-        </div>
+                        <div class="field">
+                          <label>Email</label>
+                          <input name="email" placeholder="{{emailPlaceholder}}" value='{{email}}' type="{{emailInputType}}">
+                        </div>
+
+                        <div class="field">
+                          <label>Password</label>
+                          <input name="password" type="password" class="form-control" value='{{password}}' placeholder="Password">
+                        </div>
+
+                        <div class="inline field">
+                          <a href="/forgot-password"><h5>Forgot password?</h5></a>
+                        </div>
+
+                        <button type="submit" class="ui blue submit button">Sign in</button>
+                </form>
+
+          </div>
       </div>
   </div>
 

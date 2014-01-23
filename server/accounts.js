@@ -7,7 +7,7 @@
 Meteor.startup(function() {
 
   return AccountsEntry.config({
-    logo: '/img/Logo.jpg',
+    logo: '/logo.svg',
     privacyUrl: '/privacy-policy',
     termsUrl: '/terms-of-use',
     forbidClientAccountCreation : true,

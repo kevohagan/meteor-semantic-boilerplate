@@ -1,31 +1,29 @@
 <template name="header">
-<div class="ui tiered menu">
-  <div class="menu">
-    <a class="active item" href="{{pathFor 'home'}}">
-      <i class="users icon"></i>
-      <span>Home</span>
-    </a>
-    <a class="item" href="{{pathFor 'portfolio'}}">
-      <i class="grid layout icon"></i><span>Portfolio</span>
-    </a>
-    <a class="item" href="{{pathFor 'contact'}}">
-      <i class="mail icon"></i><span>Contact</span>
-    </a>
-    <a class="item" href="{{pathFor 'entrySignIn'}}">
-      <i class="cloud icon"></i><span>Log In</span>
-    </a>
+      <div class="ui menu">
+        <a class=" item" href="{{pathFor 'home'}}">
+          <i class="users icon"></i>
+          <span>Home</span>
+        </a>
+        <a class="item" href="{{pathFor 'portfolio'}}">
+          <i class="grid layout icon"></i><span>Portfolio</span>
+        </a>
+        <a class="item" href="{{pathFor 'contact'}}">
+          <i class="mail icon"></i><span>Contact</span>
+        </a>
+        <a class="item" href="{{pathFor 'entrySignIn'}}">
+          <i class="cloud icon"></i><span>Log In</span>
+        </a>
 
-    {{loginButtons}}
-    <div class="right menu">
-      <div class="item">
-        <div class="ui icon input">
-          <input type="text" placeholder="Search...">
-          <i class="search icon"></i>
+        {{loginButtons}}
+        <div class="right menu">
+          <div class="item">
+            <div class="ui icon input">
+              <input type="text" placeholder="Search...">
+              <i class="search icon"></i>
+            </div>
+          </div>
+
         </div>
       </div>
 
-    </div>
-  </div>
-
-</div>
 </template>
