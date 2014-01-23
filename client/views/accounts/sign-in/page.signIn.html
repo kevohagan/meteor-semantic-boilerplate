@@ -2,7 +2,7 @@
 
   <div id="entrySignInPage" class="ui page ">
       <div class="ui grid one column center aligned ">
-          <div class="column wide six ">
+          <div class="column wide twelve">
                 {{#if logo}}
                   <a href="/" class="center aligned">
                   <img src="{{logo}}" alt="Logo" class="ui small rounded image entry-logo">
@@ -32,8 +32,12 @@
                           <a href="/forgot-password"><h5>Forgot password?</h5></a>
                         </div>
 
-                        <button type="submit" class="ui blue submit button">Sign in</button>
+                        <button type="submit" class="fluid blue submit ui button">Sign in</button>
                 </form>
+
+                <div class="ui basic justified center aligned segment">
+                  <p>Don't have an account? <a href="/sign-up">Sign up</a></p>
+                </div>
 
           </div>
       </div>

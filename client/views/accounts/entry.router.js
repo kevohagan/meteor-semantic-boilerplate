@@ -2,27 +2,28 @@
 Router.map(function() {
   this.route("entrySignIn", {
     path: "/sign-in",
-    onBeforeRun: function() {
+    before: function() {
       Session.set('entryError', void 0);
       return Session.set('buttonText', 'in');
     }
   });
   this.route("entrySignUp", {
     path: "/sign-up",
-    onBeforeRun: function() {
+    before: function() {
       Session.set('entryError', void 0);
       return Session.set('buttonText', 'up');
     }
   });
   this.route("entryForgotPassword", {
     path: "/forgot-password",
-    onBeforeRun: function() {
+    before: function() {
       return Session.set('entryError', void 0);
     }
   });
-  return this.route('entrySignOut', {
+  this.route('entrySignOut', {
     path: '/sign-out',
     before: function() {
+      Session.set('entryError', void 0);
       if (AccountsEntry.settings.homeRoute) {
         Meteor.logout();
         Router.go(AccountsEntry.settings.homeRoute);
@@ -30,8 +31,14 @@ Router.map(function() {
       return this.stop();
     }
   });
-});
-
+  return this.route('entryResetPassword', {
+    path: 'reset-password/:resetToken',
+    before: function() {
+      Session.set('entryError', void 0);
+      return Session.set('resetToken', this.params.resetToken);
+    }
+  });
+})
 
 
 

@@ -1,20 +1,15 @@
-// Meteor.startup(function() {
-//   return AccountsEntry.config({
-
-//   });
-// });
 
 Meteor.startup(function() {
 
+
+
   return AccountsEntry.config({
-    logo: '/logo.svg',
-    privacyUrl: '/privacy-policy',
-    termsUrl: '/terms-of-use',
-    forbidClientAccountCreation : true,
-    homeRoute: '/',
-    dashboardRoute: '/admin',
+
+    // forbidClientAccountCreation : true,
+    // homeRoute: '/',
+    // dashboardRoute: '/admin',
     // profileRoute: 'profile',
-    showSignupCode: false
+    showSignupCode: true
   });
 });
 

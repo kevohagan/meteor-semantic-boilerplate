@@ -14,6 +14,3 @@ if (typeof Handlebars !== 'undefined') {
 
 
 
-  Accounts.ui.config({
-    passwordSignupFields: 'EMAIL_ONLY'
-  });

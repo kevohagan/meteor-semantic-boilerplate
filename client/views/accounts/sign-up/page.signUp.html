@@ -1,85 +1,8 @@
 <template name='entrySignUp'>
-  <div id="entrySignUpPage" class="page">
-    <img class="background-fish" src="{{ landingPageBackgroundImage }}">
 
-    <div class="container">
-      <div class="row">
-        {{#if logo}}
-        <div class="entry-logo">
-          <a href="/"><img src="{{logo}}" alt="logo"></a>
-        </div>
-        {{/if}}
-        <div class="entry col-md-4 col-md-offset-4">
-          <h3>Create an Account</h3>
-          {{#if otherLoginServices}}
-          <p class="entry-signin-cta">If you already have an account <a href="/sign-in">sign in</a>.</p>
-          <div class="entry-social">
-            {{#each loginServices}}
-            {{> entrySocial}}
-            {{/each}}
-            <div class="email-option">
-              <strong class="line-thru">OR</strong>
-              <a data-toggle="collapse" href="#signUp">
-                Sign up with your email address
-              </a>
-            </div>
-          </div>
-          {{else}}
-          <hr>
-          <!--<p class="entry-signin-cta">If you already have an account <a href="/sign-in">sign in</a>.</p>-->
-          {{/if}}
-          {{> entryError}}
-          <form class="entry-form {{signupClass}}" id='signUp'>
-            {{#if showUsername}}
-            <div class="form-group">
-              <!--<label>Username</label>-->
-              <input name="username" type="string" class="form-control" placeholder="Username" value=''>
-            </div>
-            {{/if}}
-
-            {{#if showEmail}}
-            <div class="form-group">
-              <!--<label>Email Address</label>-->
-              <input type="email" class="form-control" placeholder="Email Address" value=''>
-            </div>
-            {{/if}}
-
-            <div class="form-group">
-              <!--<label>Password</label>-->
-              <input type="password" class="form-control" placeholder="Password" value=''>
-            </div>
-
-            {{#if showSignupCode}}
-            <div class="form-group">
-              <!--<label>Signup Code</label>-->
-              <input name="signupCode" type="string" class="form-control" placeholder="Signup Code" value=''>
-            </div>
-            {{/if}}
-
-            <button type="submit" class="submit fullwidth btn btn-warning">Sign up</button>
-          </form>
-          {{#if both}}
-          <p class="entry-agreement">By clicking Sign up, you agree to our
-            <a href="{{privacyUrl}}">Privacy Policy</a> and
-            <a href="{{termsUrl}}">Terms of Use</a>.
-          </p>
-          {{else}}
-          {{#unless neither}}
-          <p class="entry-agreement">By clicking Sign up, you agree to our
-            {{#if privacyUrl}}<a href="{{privacyUrl}}">Privacy Policy</a>.{{/if}}
-            {{#if termsUrl}}<a href="{{termsUrl}}">Terms of Use</a>.{{/if}}
-          </p>
-          {{/unless}}
-          {{/if}}
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="entrySignInPage" class="ui page ">
+  <div id="entrySignUpPage" class="ui page">
       <div class="ui grid one column center aligned ">
-          <div class="column wide six ">
+          <div class="column wide twelve">
                 {{#if logo}}
                   <a href="/" class="center aligned">
                   <img src="{{logo}}" alt="Logo" class="ui small rounded image entry-logo">
@@ -90,17 +13,36 @@
                   </a>
                 {{/if}}
 
+                <h3 class="ui header">Create an Account</h3>
+                <p>If you already have an account <a href="/sign-in">sign in</a>.</p>
 
+
+                {{#if otherLoginServices}}
+
+                <div class="ui vertical buttons">
+                  {{#each loginServices}}
+                    {{>entrySocial}}
+                  {{/each}}
+                </div>
+
+                <div class="ui horizontal section divider"> OR </div>
+
+                {{else}}
+                <hr>
+                <!--<p class="entry-signin-cta">If you already have an account <a href="/sign-in">sign in</a>.</p>-->
+                {{/if}}
+
+                {{> entryError}}
                  <form class="ui form segment {{signupClass}}" id="signUp">
 
-                        <h3 class="ui header">Create an Account</h3>
 
                         {{#if showUsername}}
                         <div class="field">
                         <!--<label>Username</label>-->
-                        <input  name="username" type="string" placeholder="Username" value=''>
+                        <input  name="username" type="text" placeholder="Username" value=''>
                         </div>
                         {{/if}}
+
                         {{#if showEmail}}
                         <div class="field">
                           <!-- <label>Email Address</label> -->
@@ -117,35 +59,31 @@
                         {{#if showSignupCode}}
                         <div class="field">
                           <!--<label>Signup Code</label>-->
-                          <input name="signupCode" type="string"  placeholder="Signup Code" value=''>
+                          <input name="signupCode" type="text"  placeholder="Signup Code" value=''>
                         </div>
+
                         {{/if}}
 
-                        <div class="inline field">
-                          <a href="/forgot-password"><h5>Forgot password?</h5></a>
-                        </div>
-
-                        <button type="submit" class="ui green submit button">Sign Up</button>
+                        <button type="submit" class="submit fluid blue ui button">Sign Up</button>
                 </form>
 
                 {{#if both}}
-                <p class="entry-agreement">By clicking Sign up, you agree to our
-                  <a href="{{privacyUrl}}">Privacy Policy</a> and
-                  <a href="{{termsUrl}}">Terms of Use</a>.
-                </p>
+                <div class="ui justified center aligned basic segment">
+                  <p class="entry-agreement">By clicking Sign up, you agree to our
+                    <a href="{{privacyUrl}}">Privacy Policy</a> and
+                    <a href="{{termsUrl}}">Terms of Use</a>.
+                  </p>
+                </div>
                 {{else}}
                 {{#unless neither}}
+                <div class="ui justified center aligned basic segment">
                 <p class="entry-agreement">By clicking Sign up, you agree to our
                   {{#if privacyUrl}}<a href="{{privacyUrl}}">Privacy Policy</a>.{{/if}}
                   {{#if termsUrl}}<a href="{{termsUrl}}">Terms of Use</a>.{{/if}}
                 </p>
+                </div>
                 {{/unless}}
                 {{/if}}
-
-                <h2 class="ui header">
-                  <i class="settings icon"></i>
-                  Account Settings
-                </h2>
 
 
           </div>

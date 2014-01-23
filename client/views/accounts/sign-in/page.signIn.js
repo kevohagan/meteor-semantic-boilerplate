@@ -4,7 +4,7 @@ Template.entrySignIn.helpers({
     if (Accounts.ui._options.passwordSignupFields === 'EMAIL_ONLY') {
       return 'email';
     } else {
-      return 'string';
+      return 'text';
     }
   },
   emailPlaceholder: function() {
