@@ -4,6 +4,7 @@
     "iron-router": {},
     "ogno-admin": {},
     "collection2": {},
-    "filepicker": {}
+    "filepicker": {},
+    "stellar": {}
   }
 }

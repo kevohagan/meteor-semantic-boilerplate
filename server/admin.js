@@ -1,6 +1,6 @@
 OgnoAdmin.config({
     auto : true,
-    filepicker : 'YOUR_FILEPICKER_KEY',
+    filepicker : 'AZaQRQGWTT7KcbW8zKtBvz',
     prefix: 'admin',
    // homeScreenTemplate  : 'admin',
     isAllowed : function () {

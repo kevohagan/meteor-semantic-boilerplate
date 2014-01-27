@@ -1,7 +1,12 @@
-Template.home.rendered = function () {
 
 
-};
+Template.home.rendered = function() {
+  $('.page-title').attr('data-stellar-ratio', -1.5);
+    $.stellar();
+}
+
+
+
 
 
 
@@ -10,4 +15,5 @@ Template.home.events({
     var that = $(e.target);
     that.transition('pulse');
   }
+
 });
