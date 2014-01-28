@@ -1,68 +1,55 @@
 <template name="entryAccountButtons">
+
+{{#if wrapLinks}}
+
   {{#if currentUser}}
-
+      <div class="ui dropdown item">
     {{#if profileUrl}}
-      {{#if wrapLinks}}<li>{{/if}}
-        <a class='profileLink' href='{{profileUrl}}'>{{signedInAs}}</a>
-      {{#if wrapLinks}}</li>{{/if}}
-    {{else}}
-      {{#if wrapLinks}}<li>{{/if}}
-        <p class="navbar-text">{{signedInAs}}</p>
-      {{#if wrapLinks}}</li>{{/if}}
+        <a href="{{profileUrl}}"><i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i></a>
+      {{else}}
+        <i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i>
     {{/if}}
-
-    {{#if wrapLinks}}<li>{{/if}}
-      <a href="/sign-out">Sign Out</a>
-    {{#if wrapLinks}}</li>{{/if}}
+        <div class="menu">
+          <a href="/sign-out" class="item"><i class="sign out icon"></i>Sign-out</a>
+        </div>
+      </div>
 
   {{else}}
-
-    {{#if wrapLinks}}<li>{{/if}}
-      <a href="/sign-in">Sign In</a>
-    {{#if wrapLinks}}</li>{{/if}}
-
-    {{#unless wrapLinks}}<span>or</span>{{/unless}}
-
-    {{#if wrapLinks}}<li>{{/if}}
-      <a href="/sign-up">Sign Up</a>
-    {{#if wrapLinks}}</li>{{/if}}
-
-<div class="ui black buttons">
-  <div class="ui button">Save</div>
-  <div class="ui black floating dropdown icon button">
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <div class="item"><i class="edit icon"></i>Edit Post</div>
-      <div class="item"><i class="delete icon"></i>Remove Post</div>
-      <div class="item"><i class="hide icon"></i>Hide Post</div>
-    </div>
-  </div>
-</div>
+      <div class="ui dropdown item">
+        <i class="icon user"></i><i class="icon dropdown"></i>
+        <div class="menu">
+          <a href="/sign-in" class="item"><i class="sign in icon"></i>Sign-in</a>
+          <a href="/sign-up" class="item"><i class="icon user"></i>Sign-up</a>
+        </div>
+      </div>
 
   {{/if}}
 
 
-  {{#if currentUser}}
-
-    {{#if profileUrl}}
-      <div class="ui dropdown item">
-        <a href="{{profileUrl}}"><i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i></a>
-        <i class="dropdown icon"></i>
-      </div>
-      {{else}}
-      <div class="ui dropdown item">
-        <i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i>
-      </div>
-    {{/if}}
-
-
 {{else}}
-  <div class="ui buttons">
-    {{#if profileUrl}}
-      <div class="ui button"><a href="{{profileUrl}}">{{signedInAs}}</a></div>
-    {{/if}}
-  </div>
+
+  {{#if currentUser}}
+      <div class="menu">
+        <div class="item">
+        {{#if profileUrl}}
+            <a href="{{profileUrl}}"><i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i></a>
+          {{else}}
+            <i class="icon user"></i>{{signedInAs}} <i class="dropdown icon"></i>
+        {{/if}}
+        </div>
+          <a href="/sign-out" class="item"><i class="mail icon">Sign Out</i></a>
+      </div>
+
+  {{else}}
+      <div class="menu">
+          <a href="/sign-in" class="item"><i class="sign in icon"></i>Sign-in</a>
+          <a href="/sign-up" class="item"><i class="icon user"></i>Sign-up</a>
+      </div>
+
+  {{/if}}
+
 
 {{/if}}
+
 </template>
 
