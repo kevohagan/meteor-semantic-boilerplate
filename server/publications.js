@@ -6,3 +6,8 @@ Meteor.publish('fotos', function () {
 Meteor.publish('cars', function () {
   return Cars.find();
 });
+
+
+Meteor.publish(null, function (){
+  return Meteor.roles.find({})
+})

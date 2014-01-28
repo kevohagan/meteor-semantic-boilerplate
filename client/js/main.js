@@ -1,6 +1,5 @@
 
 window.onscroll = function() {
-    document.body.style.webkitPerspectiveOrigin = window.scrollX + "px " + window.scrollY + "px";
     $(".page-title").css({
       'opacity' : 1-(($(this).scrollTop())/300)
     });
@@ -8,7 +7,7 @@ window.onscroll = function() {
 
 
 $(document).ready(function(){
-  $.stellar();
+
 });
 
 
@@ -22,3 +21,9 @@ Template.layout.events({
     console.log(that);
   }
 });
+
+
+
+Template.layout.rendered = function () {
+
+};

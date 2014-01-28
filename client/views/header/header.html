@@ -1,5 +1,5 @@
 <template name="header">
-    <div class="ui vertical floating sidebar menu">
+<!--     <div class="ui vertical floating sidebar menu">
       <a class="item" href="{{pathFor 'home'}}">
         <i class="home icon"></i>
         Home
@@ -19,13 +19,20 @@
           <a class="item">Contact Us</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-<div class="ui fluid fixed inverted three item menu">
+<div class="ui fluid fixed inverted menu">
   <a class="item" href="{{pathFor 'home'}}"><i class="home icon"></i>Home</a>
   <a class="item" href="{{pathFor 'portfolio'}}"><i class="lab icon"></i>Portfolio</a>
   <a class="item" href="{{pathFor 'test'}}"><i class="beer icon"></i>Test</a>
+  <a class="item" href="{{pathFor 'entrySignIn'}}"><i class="user icon"></i>Sign In</a>
+  {{#if isInRole 'admin'}}
+  <a class="item" href="{{pathFor 'admin'}}"><i class="dashboard icon"></i>Admin</a>
+  {{/if}}
+  <div class="right menu">
+  {{accountButtons}}
+  </div>
 </div>
 
 

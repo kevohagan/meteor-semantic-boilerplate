@@ -12,7 +12,7 @@
         "version": "0.2.5"
       },
       "collection2": {
-        "version": "0.3.5"
+        "version": "0.3.7"
       },
       "filepicker": {
         "version": "0.4.0"
@@ -39,8 +39,8 @@
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
-        "tag": "v0.3.5",
-        "commit": "9f6f821d3c97ec64e061b5ce4c07393491aa9803"
+        "tag": "v0.3.7",
+        "commit": "4c6c2dfd87af8cda321c80e1baea72842ad5c542"
       },
       "filepicker": {
         "git": "https://github.com/Ink/meteor.git",
