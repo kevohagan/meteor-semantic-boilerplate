@@ -7,4 +7,17 @@
       <div class='centered clickable unselectable sign-up-btn alert alert-warning'>{{error}}</div>
     {{/if}}
   {{/if}}
+
+
+  {{#if error}}
+    {{#if errorColor}}
+      <div class="ui red message">
+        <div>{{error}}</div>
+      </div>
+    {{else}}
+      <div class="ui red message">
+        <div>{{error}}</div>
+      </div>
+      {{/if}}
+  {{/if}}
 </template>

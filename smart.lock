@@ -54,8 +54,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.4.12",
-        "commit": "043d05dfb9dc8a4df23114f621cbe4f4634dab46"
+        "tag": "v0.4.13",
+        "commit": "105803e4d42308893fbda30585dbdb4a38077e9a"
       },
       "pagination-mini": {
         "git": "https://github.com/huyinghuan/meteor-pagination-mini.git",
@@ -69,8 +69,8 @@
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
-        "tag": "v0.2.33",
-        "commit": "488974acbfdb3197161a2064358909ddab8554b6"
+        "tag": "v0.2.34",
+        "commit": "d66e63a8e316f978120773ce3f92c7d82fb15f2d"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
