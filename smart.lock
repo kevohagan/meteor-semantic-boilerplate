@@ -2,9 +2,6 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "font-awesome": {
-        "version": "4.0.3"
-      },
       "iron-router": {
         "version": "0.6.2"
       },
@@ -25,11 +22,6 @@
       }
     },
     "packages": {
-      "font-awesome": {
-        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
-        "tag": "v4.0.3",
-        "commit": "61e9361384347547ae144f8228faa4deffda23db"
-      },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.6.2",

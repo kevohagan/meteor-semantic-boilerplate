@@ -1,8 +1,8 @@
 
-meteor-semantic-boilerplate
+A Boilerplate using Meteor.js and Semantic UI
 ===========================
 
-A boilerplate using Meteor.js and Semantic UI
+You can go and find a working copy at [semanticboilerplate.meteor.com](http://semanticboilerplate.meteor.com)
 
 This boilerplate includes the following packages :
 
@@ -30,10 +30,9 @@ cd meteor-semantic-boilerplate && mrt
 
 ### It has a default admin account
 
-User : admin
-Email : admin@admin.com
-Pass : admin
-
+* User : admin
+* Email : admin@admin.com
+* Pass : admin
 
 
 ### Going further
