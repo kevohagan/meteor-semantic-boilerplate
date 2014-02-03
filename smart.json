@@ -1,6 +1,5 @@
 {
   "packages": {
-    "font-awesome": {},
     "iron-router": {},
     "roles": {},
     "ogno-admin": {},

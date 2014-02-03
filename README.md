@@ -3,4 +3,40 @@ meteor-semantic-boilerplate
 ===========================
 
 A boilerplate using Meteor.js and Semantic UI
->>>>>>> 94bf3e64c97c4b4153e551a88dd79e2c557bf6f9
+
+This boilerplate includes the following packages :
+
+* Semantic UI
+* Iron-router
+* Roles
+* Collection2
+* Simple Schema
+* Autoform
+* FilePicker
+* Ogno-Admin
+* Accounts-UI
+
+
+### To start using it
+
+```
+
+git clone http://github.com/kevohagan/meteor-semantic-boilerplate.git
+
+cd meteor-semantic-boilerplate && mrt
+
+```
+
+
+### It has a default admin account
+
+User : admin
+Email : admin@admin.com
+Pass : admin
+
+
+
+### Going further
+
+You can easily activate the management of images with Filepicker, just grab your FilePicker Key
+and put it in the /server/admin.js file
