@@ -81,6 +81,9 @@ Router.map(function () {
         this.render("entrySignIn");
         this.stop();
       }
+    },
+    waitOn: function() {
+      return Meteor.subscribe('subscribers');
     }
 
   });

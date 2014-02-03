@@ -1,0 +1,19 @@
+<template name="subscriber">
+            <form class="ui fluid form segment">
+                <div class="ui icon message">
+                  <div class="content">
+                    <h3> You want to get some news on our products? </h3>
+                    <p>Subscribe to our newsletter! :)</p>
+                  </div>
+                </div>
+              {{#if status}}
+              <div class="ui {{class}} message">
+                  <div class="content">{{message}}</div>
+              </div>
+              {{/if}}
+            <div class="field">
+              <input placeholder="Your email here" type="email" >
+            </div>
+          <button type="submit" class="ui green submit button fluid"></i>Subscribe</button>
+        </form>
+</template>

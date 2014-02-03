@@ -8,6 +8,9 @@
       "iron-router": {
         "version": "0.6.2"
       },
+      "roles": {
+        "version": "1.2.6"
+      },
       "ogno-admin": {
         "version": "0.2.5"
       },
@@ -31,6 +34,11 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.6.2",
         "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.6",
+        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
       },
       "ogno-admin": {
         "git": "https://github.com/matteodem/meteor-ogno-admin.git",
