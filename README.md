@@ -39,3 +39,9 @@ cd meteor-semantic-boilerplate && mrt
 
 You can easily activate the management of images with Filepicker, just grab your FilePicker Key
 and put it in the /server/admin.js file
+
+
+### To be done
+
+- Put accounts folder into own package : accounts-entry-semantic
+- Put subscriber into own package : subscriber-semantic
