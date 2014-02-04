@@ -1,26 +1,51 @@
 <template name="header">
-<!--     <div class="ui vertical floating sidebar menu">
+
+
+    <div class="ui vertical inverted right sidebar menu">
+      <a class="header item">
+        <i class="close icon"></i>
+        Close
+      </a>
       <a class="item" href="{{pathFor 'home'}}">
         <i class="home icon"></i>
         Home
       </a>
       <a class="item" href="{{pathFor 'portfolio'}}">
-        <i class="heart icon"></i>
-        Current Section
+        <i class="lab icon"></i>
+        Portfolio
       </a>
       <a class="item" href="{{pathFor 'test'}}">
-        <i class="facebook icon"></i>
-        Like us on Facebook
+        <i class="beer icon"></i>
+        Test
       </a>
+      {{#if isInRole 'admin'}}
+      <a class="item" href="{{pathFor 'admin'}}"><i class="dashboard icon"></i>Admin</a>
+      {{/if}}
+
+  <div class="ui inverted horizontal section divider">
+      <i class="green circular basic lightning icon"></i>
+  </div>
+
+
       <div class="item">
-        <b>More</b>
         <div class="menu">
-          <a class="item">About</a>
-          <a class="item">Contact Us</a>
+          {{accountButtons}}
         </div>
       </div>
-    </div> -->
 
+    </div>
+
+
+    <div class="ui black large icon button" id="btn">
+      <i class="icon list layout"></i>
+    </div>
+
+
+
+
+</template>
+
+<template name="temporary">
 
 <div class="ui fluid fixed inverted menu">
   <a class="item" href="{{pathFor 'home'}}"><i class="home icon"></i>Home</a>
@@ -34,16 +59,4 @@
   </div>
 </div>
 
-
-<!-- <div class="ui vertical fixed icon menu">
-  <a class="red item button">
-    <i class="mail icon"></i>
-  </a>
-  <a class="teal item">
-    <i class="lab icon"></i>
-  </a>
-  <a class="green item">
-    <i class="star icon"></i>
-  </a>
-</div> -->
 </template>
