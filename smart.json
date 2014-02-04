@@ -5,6 +5,7 @@
     "ogno-admin": {},
     "collection2": {},
     "filepicker": {},
-    "stellar": {}
+    "stellar": {},
+    "nprogress": {}
   }
 }

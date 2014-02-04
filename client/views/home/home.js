@@ -1,8 +1,6 @@
 
 
 Template.home.rendered = function() {
-         $('.page-title').attr('data-stellar-ratio', 1.3);
-         $.stellar();
 }
 
 

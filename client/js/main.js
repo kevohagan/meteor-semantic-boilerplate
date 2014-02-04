@@ -6,11 +6,6 @@ window.onscroll = function() {
 }
 
 
-$(document).ready(function(){
-
-});
-
-
 
 
 Template.layout.events({
@@ -22,8 +17,3 @@ Template.layout.events({
   }
 });
 
-
-
-Template.layout.rendered = function () {
-
-};

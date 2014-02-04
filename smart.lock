@@ -19,6 +19,9 @@
       },
       "stellar": {
         "version": "0.1.0"
+      },
+      "nprogress": {
+        "version": "0.0.3"
       }
     },
     "packages": {
@@ -51,6 +54,11 @@
         "git": "https://github.com/noorderstorm/meteor-stellar.git",
         "tag": "v0.1.0",
         "commit": "1ca2f68e0cca5967a6f88545cea12055c9fc2465"
+      },
+      "nprogress": {
+        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
+        "tag": "v0.0.3",
+        "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",

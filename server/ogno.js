@@ -1,8 +1,5 @@
 OgnoAdmin.config({
-    auto : true,
     filepicker : 'YOUR_FILEPICKER_KEY',
-    prefix: 'admin',
-   // homeScreenTemplate  : 'admin',
     isAllowed : function () {
         var user = Meteor.user();
 
