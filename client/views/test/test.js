@@ -8,6 +8,9 @@ Template.test.rendered = function () {
 Template.test.events({
   'click #btn': function () {
     $('.ui.sidebar').sidebar('toggle');
-    console.log('clicke');
+  },
+  'click .ui.sidebar .header': function(e) {
+    e.preventDefault();
+    $('.ui.sidebar').sidebar('toggle');
   }
 });
