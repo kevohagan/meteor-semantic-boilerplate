@@ -1,7 +1,7 @@
 Template.header.rendered = function () {
   $('.ui.sidebar').sidebar({
     overlay: true,
-    duration: 1000
+    duration: '2000'
   });
 
   $('.ui.dropdown').dropdown();
