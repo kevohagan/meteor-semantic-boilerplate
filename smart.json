@@ -5,7 +5,10 @@
     "ogno-admin": {},
     "collection2": {},
     "filepicker": {},
-    "stellar": {},
-    "nprogress": {}
+    "nprogress": {},
+    "ms-seo": {
+      "git": "https://github.com/DerMambo/ms-seo"
+    },
+    "font-awesome": {}
   }
 }

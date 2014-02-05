@@ -17,11 +17,15 @@
       "filepicker": {
         "version": "0.4.0"
       },
-      "stellar": {
-        "version": "0.1.0"
-      },
       "nprogress": {
         "version": "0.0.3"
+      },
+      "ms-seo": {
+        "git": "https://github.com/DerMambo/ms-seo",
+        "branch": "master"
+      },
+      "font-awesome": {
+        "version": "4.0.3"
       }
     },
     "packages": {
@@ -50,15 +54,20 @@
         "tag": "v0.4.0",
         "commit": "20d56aaaf48be3a5c0499547a495a6463b4fa3d9"
       },
-      "stellar": {
-        "git": "https://github.com/noorderstorm/meteor-stellar.git",
-        "tag": "v0.1.0",
-        "commit": "1ca2f68e0cca5967a6f88545cea12055c9fc2465"
-      },
       "nprogress": {
         "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
         "tag": "v0.0.3",
         "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
+      },
+      "ms-seo": {
+        "git": "https://github.com/DerMambo/ms-seo",
+        "branch": "master",
+        "commit": "495cb66e744de2eeb67d9fd28f93a9cf3ad6f54b"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
