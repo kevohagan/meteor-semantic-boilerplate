@@ -1,12 +1,5 @@
-
-
 Template.home.rendered = function() {
 }
-
-
-
-
-
 
 Template.home.events({
   'click img': function (e, tmpl) {
