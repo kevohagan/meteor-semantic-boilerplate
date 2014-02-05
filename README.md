@@ -5,6 +5,8 @@ A Boilerplate using Meteor.js and Semantic UI
 
 You can go and find a working copy at [semanticboilerplate.meteor.com](http://semanticboilerplate.meteor.com)
 
+A special thanks to : [@matteodem](http://github.com/matteodem), [@DerMambo](http://github.com/DerMambo), [@alanning](http://github.com/alanning), all the guys at [@BeDifferential](http://github.com/BeDifferential) and many more
+
 This boilerplate includes the following packages :
 
 * Semantic UI
@@ -16,6 +18,9 @@ This boilerplate includes the following packages :
 * FilePicker
 * Ogno-Admin
 * Accounts-UI
+* NProgress
+
+it also includes : [animate.css](http://github.com/daneden/animate.css) for lot's of css fun!
 
 
 
