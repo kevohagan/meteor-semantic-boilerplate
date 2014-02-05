@@ -4,46 +4,30 @@
   <div class="ui page grid center aligned">
     <div class="column twelve wide ">
       <h2 class="ui huge center aligned icon header">
-        <i class="circular emphasized inverted green chat outline icon"></i>
-        <div class="content">Contact Us<div class="sub header">We will love to hear from you! So please don't hesitate</div>
+        <i class="circular emphasized inverted orange chat outline icon"></i>
+          <div class="content">Contact Us<div class="sub header">Don't hesitate</div>
         </div>
       </h2>
       <div class="ui inverted horizontal section divider">
         <i class="green circular mail icon"></i>
       </div>
 
-      <div class="ui form segment">
+      <form id="contact-form" class="ui form segment" parsley-validate novalidate>
           <div class="field">
               <label>Name</label>
-              <input placeholder="Name" type="text">
+              <input id="contact-name" placeholder="Name" type="text" parsley-required="true" data-trigger="change">
           </div>
           <div class="field">
             <label>Email</label>
-            <input placeholder="Email" type="email">
+            <input placeholder="Email" type="email" id="contact-email" parsley-required="true" data-trigger="change">
           </div>
           <div class="field">
             <label>Your Message</label>
-            <textarea></textarea>
+            <textarea id="contact-message" rows="6" parsley-required="true"></textarea>
           </div>
 
-          <div class="ui blue submit button">Send</div>
-        </div>
-
-
-<!--       <div class="ui stackable grid" >
-        <div class="row">
-          <div class="ten wide column">
-          <div class="ui teal header">Contact Us</div>
-          <p>Semantic provides tracing for javascript behavior so your components can tell you what they're doing as they do it.</p>
-
-          </div>
-          <div class="six wide column">
-            <img src="/img/hazy-trees.jpg" class="ui image">
-          </div>
-        </div>
-      </div> -->
-
-
+          <button class="ui blue submit button" name="submit" type="submit" data-sending-message="Sending..." data-ok-message="Message Sent">Send</button>
+      </form>
 
     </div>
   </div>
