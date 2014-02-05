@@ -2,6 +2,7 @@
 A Boilerplate using Meteor.js and Semantic UI
 ===========================
 
+
 You can go and find a working copy at [semanticboilerplate.meteor.com](http://semanticboilerplate.meteor.com)
 
 This boilerplate includes the following packages :
@@ -17,6 +18,7 @@ This boilerplate includes the following packages :
 * Accounts-UI
 
 
+
 ### To start using it
 
 ```
@@ -28,12 +30,18 @@ cd meteor-semantic-boilerplate && mrt
 ```
 
 
-### It has a default admin account
+### Customizations
+
+It has a basic account setup :
 
 * User : admin
 * Email : admin@admin.com
 * Pass : admin
 
+
+A working subscribe and contact forms :
+
+go check subscriber.js and contact.js for more info
 
 ### Going further
 
@@ -45,3 +53,8 @@ and put it in the /server/admin.js file
 
 - Put accounts folder into own package : accounts-entry-semantic
 - Put subscriber into own package : subscriber-semantic
+- basic security on admin
+- more basic helpers
+- cleanup code
+- better README
+- much much more..
