@@ -1,0 +1,22 @@
+<template name="singlepost">
+<div class="one column center aligned stackable grid ui">
+  <div class="fourteen wide column">
+    <div class="ui vertical basic segment">
+      <article class="post">
+        <h1 class="ui huge dividing black secondary header">{{title}}</h1>
+        <h3 class="sub header black tertiary">By {{authorName}} on {{blogFormatDate publishedAt}}</h3>
+        <div class="ui basic segment aligned left">
+          {{{html}}}
+        </div>
+      </article>
+    </div>
+    <div class="divider horizontal ui"><i class="icon url"></i></div>
+    <a href="{{pathFor 'blogIndex'}}"><div class="ui floated left black tertiary header"><i class="triangle left icon"></i><div class="content"> Back to the Blog</div></div></a>
+    <div class="ui floated right header">
+      <a href="#" target="_blank" class="fb-share"><i class="circular facebook icon link popup" data-content="Share this on Facebook" data-variation="inverted"></i></a>
+      <a href="#" class="tw-share"><i class="circular twitter icon link popup" data-content="Share this on Twitter" data-variation="inverted"></i></a>
+    </div>
+
+  </div>
+</div>
+</template>

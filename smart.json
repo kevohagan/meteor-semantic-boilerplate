@@ -9,6 +9,7 @@
     "ms-seo": {
       "git": "https://github.com/DerMambo/ms-seo"
     },
-    "font-awesome": {}
+    "font-awesome": {},
+    "blog": {}
   }
 }

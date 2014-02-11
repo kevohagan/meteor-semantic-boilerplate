@@ -1,0 +1,29 @@
+<template name="indexblog">
+<div class="ui grid two stackable column ">
+    <div class="desktop only column three wide">
+      <div class="inverted segment ui">
+        <div class="header">Test</div>
+      </div>
+    </div>
+    <div class="column twelve wide">
+      {{> indexblogLoop}}
+      {{blogPager}}
+    </div>
+</div>
+</template>
+
+<template name="indexblogLoop">
+  {{#each posts}}
+    <article class="ui basic segment">
+   <h2 class="ui left floated black tertiary header"><a  href="{{pathFor 'blogShow'}}">{{title}}</a></h2>
+    <h4 class="ui right floated sub black tertiary header post-meta">By {{authorName}} on {{blogFormatDate publishedAt}}</h4>
+    <div class="ui clearing divider"></div>
+    <div class="ui left aligned secondary segment">
+      <p>{{{excerpt}}}</p>
+    </div>
+    </article>
+    <div class="ui section divider"></div>
+  {{else}}
+    This blog is looking pretty empty...
+  {{/each}}
+</template>
