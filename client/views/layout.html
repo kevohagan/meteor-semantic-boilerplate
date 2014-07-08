@@ -14,7 +14,7 @@
 
 
 <template name="layout">
-{{yield 'header'}}
-{{yield}}
-{{yield 'footer'}}
+{{> yield region='header'}}
+{{> yield}}
+{{> yield region='footer'}}
 </template>
